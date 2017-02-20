@@ -1,0 +1,20 @@
+//
+   Created by zhangyingjie on 16/10/10.
+
+extends layout
+
+block content
+    .container(style="margin-top:70px;")
+        // Large modal
+        button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bs-example-modal-lg') Large modal
+        .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+            .modal-dialog.modal-lg
+                .modal-content
+                    | 这是一个大的弹出框。没有什么作用
+        // Small modal
+        button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bs-example-modal-sm') Small modal
+        .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+            .modal-dialog.modal-sm
+                .modal-content
+                    | 这是一个小的弹出框。没有什么作用
+

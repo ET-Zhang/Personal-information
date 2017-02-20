@@ -1,0 +1,24 @@
+//
+   Created by zhangyingjie on 16/10/10.
+
+extends layout
+
+block content
+    .container(style="margin-top:70px;")
+        // Button trigger modal
+        button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+            | Launch demo modal
+        // Modal
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                            span(aria-hidden='true') ×
+                            span.sr-only Close
+                        h4#myModalLabel.modal-title Modal title
+                    .modal-body
+                        这里是一个弹出框,确保这个框在移动端和PC端上都是好用的不会出任何问题。
+                    .modal-footer
+                        button.btn.btn-primary(type='button') Save changes
+                        button.btn.btn-default(type='button', data-dismiss='modal') Close
