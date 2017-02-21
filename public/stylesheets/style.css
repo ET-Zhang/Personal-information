@@ -1,0 +1,28 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Microsoft YaHei','Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.backImg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    z-index: -999;
+}
+@media all and (max-width: 750px) {
+    .backImg{
+        width:auto;
+        height: 100%;
+    }
+}
+.sidebar-left > .toggler{
+    box-shadow: 3px 0px 10px rgb(0, 0, 0) !important;
+    background: rgba(142, 127, 127, 0.62) !important;
+    border-left: 1px solid #888181 !important;
+}

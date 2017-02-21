@@ -10,34 +10,25 @@ html
     meta(name='keywords', content='zhang,z,z,张英杰,英杰,html,个人主页,javascript,前端')
     meta(name='description', content='dom,')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
-  body
-    div.navbar.navbar-fixed-top.header-navbar-style.navbar-inverse(role="navigation")
-      div.container
-        div.navbar-header
-          button(type="button").navbar-toggle(data-toggle="collapse")(data-target=".navbar-collapse")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href="/") ET-zhang
-        div.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li: a(href="/contact") 首页
-            li.dropdown: a(href="#").dropdown-toggle(data-toggle="dropdown") dom
-              b.caret
-              ul.dropdown-menu.beige
-                li: a(href="#") Action
-                li: a(href="#") Another action
-                li: a(href="#") Something else here
-                li.divider
-                li: a(href="#") Separated link
-                li.divider
-                li: a(href="#") One more separated link
-            li: a(href="/faq") 兴趣爱好
-    block content
+    link(rel='stylesheet', href='/stylesheets/BootSideMenu.css')
+    link(rel='stylesheet', href='/stylesheets/default.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     script(rel='javascript' src='/javascripts/jquery.min.js')
+  body
+    // Test
+    #test
+      .list-group
+        a.list-group-item.active(href='/') ET-Zhang
+        a.list-group-item(href='#') Dapibus ac facilisis in
+    // /Test 2
+    // Normale contenuto di pagina
+    .container-fluid
+      .row
+        block content
+    footer.darkseagreen
     script(rel='javascript' src='/javascripts/bootstrap.min.js')
+    script(rel='javascript' src='/javascripts/BootSideMenu.js')
     script(rel='javascript' src='/javascripts/vue.js')
+    script(rel='javascript' src='/javascripts/sidebar.js')
